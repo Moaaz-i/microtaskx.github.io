@@ -1,0 +1,81 @@
+:root {
+  --primary: #3b82f6;
+  --bg: #0b1020;
+  --bg-alt: #111827;
+  --text: #e5e7eb;
+  --text-muted: #9ca3af;
+  --card: #1f2937;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.sidebar {
+  background: var(--bg-alt);
+}
+
+.markdown-section {
+  max-width: 900px;
+}
+
+.navbar {
+  background: var(--bg-alt) !important;
+  border-bottom: 1px solid #222;
+}
+
+.app-name-link img {
+  height: 40px;
+}
+
+.card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.app-name-link img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70px;
+  width: auto;
+  max-width: 240px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.navbar {
+  background: #0b1020;
+  border-bottom: 1px solid #1f2937;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.markdown-section img[alt="MicroTaskX Logo"] {
+  display: block;
+  margin: 30px auto 10px;
+  max-width: 260px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
+}
+
+@keyframes fadeInLogo {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.markdown-section img[alt="MicroTaskX Logo"] {
+  animation: fadeInLogo 0.8s ease-out;
+}
